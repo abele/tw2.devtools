@@ -1,1 +1,1 @@
-<div xmlns:py="http://genshi.edgewall.org/" py:attrs="attrs"></div>
+<div xmlns:py="http://genshi.edgewall.org/" py:attrs="w.attrs"></div>
