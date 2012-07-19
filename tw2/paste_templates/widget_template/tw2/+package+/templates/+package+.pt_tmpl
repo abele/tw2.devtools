@@ -1,1 +1,1 @@
-<div "$${w.attrs}" ></div>
+<div id="$${w.id}" ></div>
