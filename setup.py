@@ -1,20 +1,12 @@
 """Setuptools setup file"""
-
-import sys, os
-
 from setuptools import setup, find_packages
 
-try:
-    import multiprocessing
-    import logging
-except:
-    pass
 
 setup(
     name='tw2.devtools',
     version='2.1.0a2',
     description="Web widget creation toolkit based on TurboGears widgets - development tools",
-    long_description = open('README.txt').read().split('\n\n', 1)[1],
+    long_description = open('README.rst').read().split('\n\n', 1)[1],
     install_requires=[
         'tw2.core>=2.1.0a',
         'paste',
@@ -46,11 +38,12 @@ setup(
         # removed.
         "formencode",
     ],
+    setup_requires=['nose'],
     url = "http://toscawidgets.org/documentation/tw2.core/",
     author='Paul Johnston, Christopher Perkins, Alberto Valverde & contributors',
     author_email='paj@pajhome.org.uk',
     license='MIT',
-    test_suite = 'nose.collector',
+    test_suite='nose.collector',
     packages=find_packages(exclude=['ez_setup', 'tests']),
     namespace_packages = ['tw2'],
     include_package_data=True,

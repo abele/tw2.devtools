@@ -13,7 +13,7 @@ $(VIRTUAL_ENV)/lib/python*/site-packages/tw2.devtools.egg-link:
 $(PYTHON): env
 
 test: $(PYTHON)
-	$(PYTHON) setup.py test
+	$(PYTHON) setup.py nosetests
 
 env:
 	virtualenv -p python2.7 --no-site-packages env
