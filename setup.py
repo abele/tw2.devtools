@@ -20,7 +20,6 @@ setup(
         "decorator",
         "genshi",
         "mako",
-        "repoze.tm",
         ],
     extras_require = {
         'build_docs': [
